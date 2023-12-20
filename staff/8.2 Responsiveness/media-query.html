@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query</title>
   <style>
-    div {
+    .purple {
       background-color: rebeccapurple;
       height: 500px;
       width: 500px;
@@ -15,9 +15,23 @@
     @media (max-width: 600px) {
 
       /* CSS for screens below or equal to 600px wide */
-      div {
+      .purple {
         height: 200px;
         width: 200px;
+      }
+    }
+
+    .red {
+      background-color: red;
+      height: 500px;
+      width: 500px;
+    }
+    @media (min-width: 600px) {
+
+      /* CSS for screens above or equal to 600px wide */
+      .red {
+        height: 100px;
+        width: 100px;
       }
     }
   </style>
@@ -25,7 +39,8 @@
 
 <body>
   <h1>Media Query</h1>
-  <div></div>
+  <div class="purpe"></div>
+  <div class="red"></div>
 </body>
 
 </html>
