@@ -8,11 +8,11 @@
   <style>
     .purple {
       background-color: rebeccapurple;
-      height: 500px;
-      width: 500px;
+      height: 300px;
+      width: 400px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
 
       /* CSS for screens below or equal to 600px wide */
       .purple {
@@ -23,11 +23,11 @@
 
     .red {
       background-color: red;
-      height: 500px;
+      height: 100px;
       width: 500px;
     }
 
-    @media (max-width: 600px) {
+    @media (min-width: 400px) and (max-width: 600px) {
       /* CSS for screens above or equal to 600px wide */
       .red {
         height: 200px;
@@ -39,7 +39,7 @@
 
 <body>
   <h1>Media Query</h1>
-  <div class="purpe"></div>
+  <div class="purple"></div>
   <div class="red"></div>
 </body>
 
