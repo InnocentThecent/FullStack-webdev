@@ -15,8 +15,10 @@
       border: 5px solid gold;
       display: inline-flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: flex-end;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      align-content: flex-start;
       padding: 10px;
       width: 100%;
       height: 80vh;
@@ -51,7 +53,7 @@ children of the .container class.
     <div class="blue">Blue</div>
     <div class="indigo">Indigo</div>
     <div class="purple">Purple</div>
-    <div class="bugger">Bugger</div>
+    <div class="bugger" style="align-self: flex-start;">Bugger</div>
   </div>
   
 </body>
